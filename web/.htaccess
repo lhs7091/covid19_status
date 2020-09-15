@@ -1,0 +1,7 @@
+<ifModule mod_headers.c>
+    SetEnvIf User-Agent .*Wget* wget
+
+    Order deny,allow
+    Deny from all
+    Allow from env=wget
+ </ifModule>    
